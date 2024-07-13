@@ -29,7 +29,6 @@ function delayedCall(fn) {
 delayedCall(function () {
     console.log("hi there");
 });
-// 
 function sumOf3(a, b, c) {
     return a + b + c;
 }

@@ -4,6 +4,7 @@ type TyUser = {
 	tyage: number
 }
 
+// 1. Unions
 type StringOrNumber = string | number;
 
 function printId(id: StringOrNumber) {
@@ -12,6 +13,7 @@ function printId(id: StringOrNumber) {
 
 printId(101); // ID: 101
 printId("202"); // ID: 202
+
 
 type TyEmployee = {
   name: string;
@@ -23,6 +25,8 @@ type TyManager = {
   department: string;
 };
 
+
+// 2. Intersection
 type TyTeamLead = TyEmployee & TyManager;
 
 const teamLead: TyTeamLead = {
@@ -30,6 +34,10 @@ const teamLead: TyTeamLead = {
   startDate: new Date(),
   department: "Software developer"
 };
+
+
+
+
 
 
 

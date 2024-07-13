@@ -13,11 +13,9 @@ function greet(firstName: string) {
 greet("harkirat");
 
 // Sum function
-
 function sum(a: number, b: number): number {
     return a + b;
 }
-
 console.log(sum(2, 3));
 
 
@@ -41,8 +39,6 @@ function delayedCall(fn: () => void) {
 delayedCall(function() {
     console.log("hi there");
 })
-
-// 
 
 function sumOf3(a:number , b:number , c:number):number{
     return a+b+c;
