@@ -1,28 +1,23 @@
 "use strict";
 function maxValue(arr) {
-  let max = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
+    let max = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
     }
-  }
-  return max;
+    return max;
 }
 console.log(maxValue([1, 2, 3]));
 function filteredUsers(users) {
-  return users.filter((x) => x.age >= 18);
+    return users.filter(x => x.age >= 18);
 }
-console.log(
-  filteredUsers([
-    {
-      firstName: "darsh",
-      lastName: "garala",
-      age: 21,
-    },
-    {
-      firstName: "Raman",
-      lastName: "Singh",
-      age: 16,
-    },
-  ])
-);
+console.log(filteredUsers([{
+        firstName: "darsh",
+        lastName: "garala",
+        age: 21
+    }, {
+        firstName: "Raman",
+        lastName: "Singh",
+        age: 16
+    },]));

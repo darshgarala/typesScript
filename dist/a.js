@@ -36,3 +36,8 @@ const ans = sumOf3(1, 2, 3);
 console.log('ans = ', ans);
 // 
 const greet1 = (name) => `Hello, ${name}!`;
+// 
+function something(cb1) {
+    const ans = cb1("demo", 121);
+    return "1";
+}

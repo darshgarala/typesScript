@@ -53,3 +53,12 @@ console.log('ans = ',ans);
 
 
 const greet1 = (name:string) => `Hello, ${name}!`;
+
+
+
+// 
+
+function something(cb1:(str:string,num:number)=>string):string{
+    const ans = cb1("demo",121);
+    return "1";
+}
